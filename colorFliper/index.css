@@ -1,0 +1,110 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Russo One", sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+}
+
+h2{
+    letter-spacing: 0.1rem;
+    margin-bottom: 20px;
+    line-height: 1rem;
+    font-family: "Russo One", sans-serif;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+
+    h2{
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+    body{
+        font-size: 1rem;
+    }
+
+}
+
+nav{
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 4rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.nav-center{
+    width: 60vw;
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-center h2{
+    margin: auto;
+    margin-top: 7px;
+    color: #1b1b11;
+    font-size: 32px;
+}
+
+main{
+    display: grid;
+    place-items: center;
+    min-height: calc(100hv - 0.4rem);
+}
+
+
+.container{
+    text-align: center;
+    align-content: center;
+    max-width: 50%;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container h2{
+    background-color: black;
+    color: #fff;
+    padding: 2px 10px;
+    font-size: 30px;
+    border-radius: 0.3rem;
+    margin-bottom: 2;
+
+
+}
+
+.btn-hero{
+    background-color: transparent;
+    color: #222;
+    font-family: "Roboto" sans-serif;
+    letter-spacing: 00.1rem;
+    transition: all 0.2s linear;
+    border: 2px solid #222;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+
+
+}
+
+.btn-hero:hover{
+    color: #fff;
+    background-color: #222;
+}
