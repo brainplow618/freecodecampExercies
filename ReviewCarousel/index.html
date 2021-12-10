@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Review Carousal</title>
+</head>
+<body>
+    <div class="container">
+        <div class="slide-container active">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img class="img" src="./img1.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Abdul Rehman</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos recusandae aliquid sunt vitae, unde quos. Repudiandae, sed. Ea tempora labore, ipsam quaerat optio exercitationem sequi. Quod recusandae quae id?</p>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img class="img" src="./img0.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Abdul Rehman</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos recusandae aliquid sunt vitae, unde quos. Repudiandae, sed. Ea tempora labore, ipsam quaerat optio exercitationem sequi. Quod recusandae quae id?</p>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img class="img" src="./img.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Abdul Rehman</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos recusandae aliquid sunt vitae, unde quos. Repudiandae, sed. Ea tempora labore, ipsam quaerat optio exercitationem sequi. Quod recusandae quae id?</p>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img class="img" src="./img2.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Abdul Rehman</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dignissimos recusandae aliquid sunt vitae, unde quos. Repudiandae, sed. Ea tempora labore, ipsam quaerat optio exercitationem sequi. Quod recusandae quae id?</p>
+            </div>
+        </div>
+
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+    </div>
+    <script>
+let slides = document.querySelectorAll('.slide-container');
+let index = 0;
+
+
+
+function next(){
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}
+
+function prev(){
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.length) % slides.length
+}
+    </script>
+</body>
+</html>
