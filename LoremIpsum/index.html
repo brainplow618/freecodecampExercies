@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lorem Gnenrator</title>
+</head>
+<body>
+    <div class="cont">
+        <h1>Lorem Impusm <span>Generate</span></h1>
+        <div class="card">
+            <input type="number" name="num" id="search" placeholder="Enter number of sentence">
+            <input type="submit" value="Generate" id="btn">
+            <div class="content">
+
+
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script>
+        const inp = document.getElementById("search");
+        const btn = document.getElementById("btn");
+        const cont = document.querySelector(".content");
+
+
+        btn.addEventListener("click", loremgen)
+
+
+        async function loremgen(){
+            try{
+                if(inp.value === ""){
+                    alert("Requried")
+                }else{
+
+                    let res = await fetch(`http://hipsum.co/api/?type=hipster-centric&sentences=${inp.value}"`);
+                    let data = await res.json();
+                    cont.textContent = data;
+                    
+                    // console.log(data);   
+                }
+            }
+            catch(e){
+                console.log(e);
+            }
+        }
+    </script>
+</body>
+</html>

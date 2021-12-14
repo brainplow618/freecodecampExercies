@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+h1{
+    color: rgb(241, 82, 77);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cont{
+    width: 700px;
+    max-width: 70%;
+    margin: 0 auto;
+
+}
+
+span{
+    color: gray;
+}
+
+.card{
+    background-color: honeydew;
+    padding: 40px 20px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(75, 75, 75, 0.8);
+}
+
+
+input[type="number"]{
+    width: 80%;
+    padding: 10px 20px;
+    border: 2px solid rgb(148, 193, 238);
+    outline-color: rgb(148, 193, 238);
+    
+}
+
+
+#btn{
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 2px solid rgb(7, 130, 172);
+    background-color: rgb(7, 130, 172);
+    cursor: pointer;
+
+}
+
+
+.content{
+    /* background-color: #cecece; */
+    border: 2px solid rgb(148, 193, 238);
+    outline-color: rgb(148, 193, 238);
+    background-color: rgb(230, 242, 247);
+    margin-top: 20px;
+    line-height: 1.5;
+    padding: 20px;
+    cursor: copy;
+    /* display: none; */
+
+    
+}
