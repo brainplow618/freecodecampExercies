@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Nunito:ital,wght@0,300;0,700;1,300&family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Russo One', sans-serif; */
+    background-color: rgb(135, 238, 135);
+    
+}
+
+.container{
+    border: 1px solid black;
+    /* width: 90%; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.groceries{
+    border: 1px solid black;
+    width: 600px;
+    height: 100vh;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+.groceries h1{
+    font-size: 2.5rem;
+    margin-top: 1em;
+}
+
+.groceries i{
+    font-size: 2rem;
+    color: rgb(135, 238, 135);
+}
+
+.groceries input{
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid black;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+
+
+#allitem{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 1.5rem;
+
+}
+
+#allitem h2{
+    margin-right: 340px;
+
+
+}
